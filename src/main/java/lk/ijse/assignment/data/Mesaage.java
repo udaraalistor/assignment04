@@ -8,6 +8,10 @@ import java.util.Date;
 @Table(name = "message")
 public class Mesaage {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
     @Column(name = "sender")
     private String sender;
     @Column(name = "message")

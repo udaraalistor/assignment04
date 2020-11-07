@@ -1,10 +1,18 @@
 package lk.ijse.assignment.data;
 
+import javax.persistence.*;
 import java.util.Date;
 
+
+@Entity
+@Table(name = "message")
 public class Mesaage {
+
+    @Column(name = "sender")
     private String sender;
+    @Column(name = "message")
     private String messaage;
+    @Column(name = "sentTime")
     private Date sentTime;
 
 
